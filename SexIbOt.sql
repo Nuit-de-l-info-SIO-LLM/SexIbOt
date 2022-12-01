@@ -16,7 +16,7 @@ CREATE TABLE enfant( -- CREATION DES ENFANTS
 CREATE TABLE famille( -- CREATION DE LA TABLE FAMILLE
     id_type int,
     nom_type varchar(40),
-    PRIMARY KEY (id_type) -- TODO : VERIFIER
+    PRIMARY KEY (id_type) 
 );
 CREATE TABLE partie( -- CREATION DE LA TABLE PARTIE
     id_partie int,
@@ -24,7 +24,7 @@ CREATE TABLE partie( -- CREATION DE LA TABLE PARTIE
     PRIMARY KEY (id_partie),
     FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id_utilisateur)
 );
-CREATE TABLE carte( -- CRREATION DE LA TABLE CARTE
+CREATE TABLE carte( -- CREATION DE LA TABLE CARTE
     id_carte int,
     type_carte int,
     famille int,
@@ -65,27 +65,27 @@ INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie");
 INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage");
 
 -- INSERTION DES CARTES PRESERVATIF
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1 , 'lien'); -- VERIFIER INSERSIONS
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1 , 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (2, 1, 2, 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (3, 1, 3, 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (4, 1, 4, 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (5, 1, 5, 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (6, 1, 6, 'lien');
 -- INSERTION DES CARTES DES MALADIES
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (5, 2, 7, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (6, 2, 8, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (7, 2, 9, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (8, 2, 10, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (9, 2, 11, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (10, 2, 12, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (11, 2, 13, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (12, 2, 14, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (7, 2, 7, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (8, 2, 8, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (9, 2, 9, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (10, 2, 10, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (11, 2, 11, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (12, 2, 12, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (13, 2, 13, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (14, 2, 14, 'lien');
 -- INSERTION DES CARTES DU DEPISTAGE
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (10, 3, 15, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (11, 3, 16, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (12, 3, 17, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (13, 3, 18, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (14, 3, 19, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (15, 3, 15, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (16, 3, 16, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (17, 3, 17, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (18, 3, 18, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (19, 3, 19, 'lien');
 
 
 
