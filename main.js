@@ -1,3 +1,4 @@
+const { channel } = require("diagnostics_channel")
 const DISCORD = require("discord.js")
 const BOT = new DISCORD.Client({intents: 3276799})
 const CONFIG = require("./token")
@@ -29,9 +30,16 @@ BOT.on("messageCreate", (message) => {
                 if(vart[3] === resultQueryType) { // TODO : ResultQueryType est une variable qui contient le type de carte, il doit correspondre.
                     if(vart[4] === resultQueryEnfant){
                         message.channel.send("Le joueur demande la carte : " + vart[4] + " pour la famille : " + vart[3] + " au joueur : " + vart[2]);
+                        if(resultQueryCarte === (vart[3]+"+"+vart[4])){ // TODO : Si l'utilisateur a la carte que le joueur a demandé, alors il doit lui donner.
+                            // TODO : Donner la carte a l'utilisateur l'ayant demandé et retiré la carte de la main du joueur visé.
+                        } else {
+                            message.channel.send("Le joueur ciblé n'a pas la carte demandé.");
+                        }
+                    } else{
+                        message.channel.send("La carte n'existe pas.");
                     }
                 } else {
-                    message.channel.send("Vous avez écrit de la merde");
+                    message.channel.send("Le type n'existe pas.");
                 }
             } 
         }
@@ -39,5 +47,12 @@ BOT.on("messageCreate", (message) => {
         message.reply("**Liste des commandes :**\n /demand {user} {type} {card}\n /help \n /creePartie")
     } else if(s.startsWith("/creePartie")) {
         message.reply("WIP !") // TODO : A faire
+    } else if(s.startsWith("/afficheCarte")) {
+        afficheCarte(message)
     }
 })
+
+function afficheCarte(message) {
+    message.channel.send("Voici vos cartes :")
+    message.channel.send("https://cdn.discordapp.com/attachments/1047875519787585598/1047999111619674203/gonorrhee-8.jpg")
+}
