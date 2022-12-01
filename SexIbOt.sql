@@ -60,9 +60,9 @@ INSERT INTO enfant(id_enfant, nom_enfant) VALUES (19, 'Centre de diagnostic');
 
 
 -- INSERTION A FAIRE - CARTE :
-INSERT INTO famille(id_type,nom_type) VALUES (1, "Préservatif")
-INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie")
-INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage")
+INSERT INTO famille(id_type,nom_type) VALUES (1, "Préservatif");
+INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie");
+INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage");
 
 -- INSERTION DES CARTES PRESERVATIF
 INSERT INTO carte (id_carte, famille, enfant, lien_carte) VALUES (1, 1, 1 , 'lien'); -- VERIFIER INSERSIONS
