@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Nuit-de-l-info-SIO-LLM/SexIbOt#readme",
   "dependencies": {
-    "discord.js": "^14.7.1"
+    "discord.js": "^14.7.1",
+    "mysql": "^2.18.1"
   }
 }

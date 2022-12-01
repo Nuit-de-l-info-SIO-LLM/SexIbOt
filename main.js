@@ -2,6 +2,7 @@ const DISCORD = require("discord.js")
 const BOT = new DISCORD.Client({intents: 3276799})
 const CONFIG = require("./token")
 
+
 BOT.login(CONFIG.token)
 
 // QUAND LE BOT DEMARRE
