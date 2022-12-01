@@ -17,10 +17,27 @@ BOT.on("messageCreate", (message) => {
     }
     let s = message.content;
     if ( s.startsWith("/demande") ) { // TODO : Faire un like
-        message.reply("WIP !") // TODO : Faire la commande
+        vart = s.split(" ");
+        if (vart.length < 4) {
+            message.channel.send("Il manque des arguments");
+        } else if (vart.length > 4) {
+            message.channel.send("Trop d'arguments");
+        } else {
+            if(message.author.id === vart[2] || message.author.username === vart[2]) {
+                message.channel.send("Vous n'avez pas le droit de faire cette commande sur vous...");
+            } else if(vart[2].id === resultQuery || vart[2] === resultQuery) { // TODO : ResultQuery est une variable qui contient l'id de la personne qui a fait la demande
+                if(vart[3] === resultQueryType) { // TODO : ResultQueryType est une variable qui contient le type de carte, il doit correspondre.
+                    if(vart[4] === resultQueryEnfant){
+                        message.channel.send("Le joueur demande la carte : " + vart[4] + " pour la famille : " + vart[3] + " au joueur : " + vart[2]);
+                    }
+                } else {
+                    message.channel.send("Vous avez écrit de la merde");
+                }
+            } 
+        }
     } else if(message.content === "/help") {
         message.reply("**Liste des commandes :**\n /demand {user} {type} {card}\n /help \n /creePartie")
-    } else if(message.content === "/creePartie") {
+    } else if(s.startsWith("/creePartie")) {
         message.reply("WIP !") // TODO : A faire
     }
 })
