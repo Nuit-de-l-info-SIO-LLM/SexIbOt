@@ -16,7 +16,7 @@ BOT.on("messageCreate", (message) => {
         return;
     }
     let s = message.content;
-    if ( s.match(/demande.*/)) { // TODO : Faire un like
+    if ( s.startsWith("/")) { // TODO : Faire un like
         message.reply("WIP !") // TODO : Faire la commande
     } else if(message.content === "/help") {
         message.reply("**Liste des commandes :**\n /demand {user} {type} {card}\n /help \n /creePartie")
