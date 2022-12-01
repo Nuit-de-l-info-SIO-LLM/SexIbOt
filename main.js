@@ -1,5 +1,6 @@
 const DISCORD = require("discord.js");
 const dbConnexion = require("./db.js");
+import {SQLQuery} from 'db.js';
 const BOT = new DISCORD.Client({intents: 3276799});
 const token = require("./SexIbOt/config.json");
 
