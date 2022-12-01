@@ -5,17 +5,17 @@ USE SexIbOt; -- UTILISATION DE LA BASE DE DONNEES
 
 CREATE TABLE utilisateur( -- CREATION DES UTILISATEURS
     id_utilisateur int,
-    listcarte varchar,
+    listcarte varchar(100),
     PRIMARY KEY (id_utilisateur)
 );
 CREATE TABLE enfant( -- CREATION DES ENFANTS
     id_enfant int,
-    nom_enfant varchar,
+    nom_enfant varchar(40),
     PRIMARY KEY (id_enfant)
 );
 CREATE TABLE famille( -- CREATION DE LA TABLE FAMILLE
     id_type int,
-    nom_type varchar,
+    nom_type varchar(40),
     PRIMARY KEY (id_type) -- TODO : VERIFIER
 );
 CREATE TABLE partie( -- CREATION DE LA TABLE PARTIE
@@ -28,7 +28,7 @@ CREATE TABLE carte( -- CRREATION DE LA TABLE CARTE
     id_carte int,
     type_carte int,
     famille int,
-    lien_carte varchar,
+    lien_carte varchar(100),
     PRIMARY KEY (id_carte),
     FOREIGN KEY (type_carte) REFERENCES famille(id_type),
     FOREIGN KEY (famille) REFERENCES enfant(id_famille)
