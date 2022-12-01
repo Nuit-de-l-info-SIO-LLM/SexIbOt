@@ -65,27 +65,27 @@ INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie");
 INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage");
 
 -- INSERTION DES CARTES PRESERVATIF
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1 , 'https://cdn.discordapp.com/attachments/1047875519787585598/1047990519998992395/preservatif-masculin-1.png');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047990519998992395/preservatif-masculin-1.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (2, 1, 2, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047993313518702653/preservatif-feminim-2png.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (3, 1, 3, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047993722836623400/contraception-pillule-3.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (4, 1, 4, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047994196256100382/sterilet-moche-4.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (5, 1, 5, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047994702512803932/implant-5.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (6, 1, 6, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047995482032574474/contraceptive-skin-patch.jpg');
 -- INSERTION DES CARTES DES MALADIES
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (7, 2, 7, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (8, 2, 8, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (9, 2, 9, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (10, 2, 10, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (11, 2, 11, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (12, 2, 12, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (13, 2, 13, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (14, 2, 14, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (7, 2, 7, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047995791194734702');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (8, 2, 8, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047999112521461790');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (9, 2, 9, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047995791194734702');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (10, 2, 10, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047995791194734702');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (11, 2, 11, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047999112521461790');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (12, 2, 12, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047995791194734702');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (13, 2, 13, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047995791194734702');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (14, 2, 14, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047996256284332063');
 -- INSERTION DES CARTES DU DEPISTAGE
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (15, 3, 15, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (16, 3, 16, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (17, 3, 17, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (18, 3, 18, 'lien');
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (19, 3, 19, 'lien');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (15, 3, 15, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047996256284332063');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (16, 3, 16, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047999112521461790');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (17, 3, 17, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047999112521461790');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (18, 3, 18, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047999112521461790');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (19, 3, 19, 'https://discord.com/channels/1047875519191973999/1047875519787585598/1047996256284332063');
 
 
 
