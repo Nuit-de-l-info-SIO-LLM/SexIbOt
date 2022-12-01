@@ -28,7 +28,7 @@ CREATE TABLE carte( -- CREATION DE LA TABLE CARTE
     id_carte int,
     type_carte int,
     famille int,
-    lien_carte varchar(100),
+    lien_carte varchar(200),
     PRIMARY KEY (id_carte),
     FOREIGN KEY (type_carte) REFERENCES famille(id_type),
     FOREIGN KEY (famille) REFERENCES enfant(id_famille)
