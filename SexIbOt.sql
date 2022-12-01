@@ -65,7 +65,7 @@ INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie");
 INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage");
 
 -- INSERTION DES CARTES PRESERVATIF
-INSERT INTO carte (id_carte, famille, enfant, lien_carte) VALUES (1, 1, 1 , 'lien'); -- VERIFIER INSERSIONS
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1 , 'lien'); -- VERIFIER INSERSIONS
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (2, 1, 2, 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (3, 1, 3, 'lien');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (4, 1, 4, 'lien');
