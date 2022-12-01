@@ -14,9 +14,11 @@ BOT.on("messageCreate", (message) => {
     if(message.author.bot){
         return;
     }
-    if (message.content === "/demand") {
+    if (message.content === "/demande%") { // TODO : Faire un like
         message.reply("WIP !") // TODO : Faire la commande
     } else if(message.content === "/help") {
-        message.reply("- - - - - - -\n /demand {user} {type} {card}\n- - - - - - -")
+        message.reply("**Liste des commandes :**\n /demand {user} {type} {card}\n /help \n /creePartie")
+    } else if(message.content === "/creePartie") {
+        message.reply("WIP !") // TODO : A faire
     }
 })
