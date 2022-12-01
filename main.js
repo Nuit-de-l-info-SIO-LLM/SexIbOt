@@ -1,9 +1,9 @@
-const DISCORD = require("discord.js")
-const BOT = new DISCORD.Client({intents: 3276799})
-const CONFIG = require("./token")
+const DISCORD = require("discord.js");
+const dbConnexion = require("./db.js");
+const BOT = new DISCORD.Client({intents: 3276799});
+const token = require("./SexIbOt/config.json");
 
-
-BOT.login(CONFIG.token)
+BOT.login(token)
 
 // QUAND LE BOT DEMARRE
 BOT.on("ready", () => {

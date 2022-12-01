@@ -1,4 +1,7 @@
+const [host, user, password] = require("./SexIbOt/config.json");
 const mysql = require("mysql");
-const db = mysql.createConnection({   host: "localhost",   user: "root",   password: "" });
+const db = mysql.createConnection({   host: host,   user: user,   password: password });
 db.connect(function(err) {   if (err) throw err;   console.log("Connecté à la base de données MySQL!"); });
 
+fonction("SELECT * FROM machin;"
+return les enregistrements)
