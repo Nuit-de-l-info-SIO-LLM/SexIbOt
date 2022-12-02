@@ -3,8 +3,8 @@
 
 ## Tâches principales :
 
-### Créer un bot discord
-### Créer une base de données
+#### Créer un bot discord
+#### Créer une base de données
   - créations tables
   - référence des tables
 
