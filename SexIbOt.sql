@@ -31,32 +31,32 @@ CREATE TABLE carte( -- CREATION DE LA TABLE CARTE
     lien_carte varchar(200),
     PRIMARY KEY (id_carte),
     FOREIGN KEY (type_carte) REFERENCES famille(id_type),
-    FOREIGN KEY (famille) REFERENCES enfant(id_famille)
+    FOREIGN KEY (famille) REFERENCES enfant(id_enfant)
 );
 -- INSERTION DANS LA BASE DE DONNEE - ENFANT
 
 -- INSERTION DES ENFANTS DE FAMILLE
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (1, 'Préservatif masculin');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (2, 'Préservatif féminin');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (1, 'masculin');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (2, 'féminin');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (3, 'Pillule');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (4, 'Stérilet');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (5, 'Implant');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (6, 'Patch de contraception');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (6, 'Patch');
 -- INSERTION DES ENFANTS DE FAMILLE
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (7, 'VIH');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (8, 'Gonorrhée');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (9, 'Syphilis');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (10, 'Chlamydia');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (11, 'Herpes');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (12, 'Hépatite B');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (13, 'Hépatite C');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (12, 'Hépatite_B');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (13, 'Hépatite_C');
 INSERT INTO enfant(id_enfant, nom_enfant) VALUES (14, 'Gardnerella');
 -- INSERTION DES ENFANTS DE FAMILLE
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (15, 'Planning familial');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (16, 'Centre de santé');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (17, 'Centre de planification');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (18, 'Centre de dépistage');
-INSERT INTO enfant(id_enfant, nom_enfant) VALUES (19, 'Centre de diagnostic');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (15, 'Planning_familial');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (16, 'Centre_santé');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (17, 'Centre_planification');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (18, 'Centre_dépistage');
+INSERT INTO enfant(id_enfant, nom_enfant) VALUES (19, 'Centre_diagnostic');
 
 
 -- INSERTION A FAIRE - CARTE :
@@ -65,7 +65,7 @@ INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie");
 INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage");
 
 -- INSERTION DES CARTES PRESERVATIF
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1(_n()), 'https://cdn.discordapp.com/attachments/1047875519787585598/1047990519998992395/preservatif-masculin-1.png');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047990519998992395/preservatif-masculin-1.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (2, 1, 2, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047993313518702653/preservatif-feminim-2png.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (3, 1, 3, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047993722836623400/contraception-pillule-3.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (4, 1, 4, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047994196256100382/sterilet-moche-4.png');
