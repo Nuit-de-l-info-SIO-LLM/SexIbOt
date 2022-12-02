@@ -65,7 +65,7 @@ INSERT INTO famille(id_type,nom_type) VALUES (2, "Maladie");
 INSERT INTO famille(id_type,nom_type) VALUES (3, "Dépistage");
 
 -- INSERTION DES CARTES PRESERVATIF
-INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047990519998992395/preservatif-masculin-1.png');
+INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (1, 1, 1(_n()), 'https://cdn.discordapp.com/attachments/1047875519787585598/1047990519998992395/preservatif-masculin-1.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (2, 1, 2, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047993313518702653/preservatif-feminim-2png.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (3, 1, 3, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047993722836623400/contraception-pillule-3.png');
 INSERT INTO carte (id_carte, type_carte, famille, lien_carte) VALUES (4, 1, 4, 'https://cdn.discordapp.com/attachments/1047875519787585598/1047994196256100382/sterilet-moche-4.png');
