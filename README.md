@@ -1,6 +1,7 @@
-***SexIbOt***
+# **SexIbOt**
 =======
-# Tâches principales :
+
+## Tâches principales :
 
 ### Créer un bot discord
 
@@ -8,7 +9,8 @@
   - créations tables
   - référence des tables
 
-# Commandes :
+
+## Commandes :
 
   - /creePartie : Permet de créer une partie
   - /help : Affiche l'aide 
