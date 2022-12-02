@@ -4,7 +4,7 @@ USE SexIbOt; -- UTILISATION DE LA BASE DE DONNEES
 
 
 CREATE TABLE utilisateur( -- CREATION DES UTILISATEURS
-    id_utilisateur int,
+    id_utilisateur varchar(20),
     listcarte varchar(100),
     PRIMARY KEY (id_utilisateur)
 );
@@ -20,7 +20,7 @@ CREATE TABLE famille( -- CREATION DE LA TABLE FAMILLE
 );
 CREATE TABLE partie( -- CREATION DE LA TABLE PARTIE
     id_partie int,
-    id_utilisateur int NOT NULL,
+    id_utilisateur varchar(20) NOT NULL,
     PRIMARY KEY (id_partie),
     FOREIGN KEY (id_utilisateur) REFERENCES utilisateur(id_utilisateur)
 );
