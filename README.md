@@ -1,6 +1,6 @@
 SexIbOt
 =======
-# Présentation code :
+# Tâches principales :
 
 ### Créer un bot discord
 
